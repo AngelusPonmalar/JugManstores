@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navigation{
+    position: sticky;
+    top: 0px;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(111, 111, 114, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    background-color: white;
+  }
+  .navbar-links{
+    display:flex;
+    column-gap: 20px;
+    text-decoration: solid;
+    color: white;
+}
+
+.navbar-menu-toggle {
+    color: black;
+    display: none;
+    cursor: pointer;
+}
+.navbar-title{
+    padding-right: 5px;
+}
+
+.side-navbar {
+    background-color: rgb(36, 35, 35);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    padding: 20px;
+    color: white;
+    transition: right 1s;
+    z-index: 1000; /* Ensure the side nav is on top */
+}
+
+.side-navbar p {
+    margin: 20px 0;
+}
+
+.side-navbar-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: black;
+}
+.gallery {
+    padding-left: 5px;
+    padding-top: 10px;
+    margin-left: 5px;
+    margin-right: none;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.aboutus img {
+    display: flex;
+    padding: 10px;
+}
+.aboutustext{
+    padding: 20px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.text{
+    padding-top: 200px;
+}
+.header button {
+    padding: 10px 20px; /* Shorthand for setting padding */
+    margin-top: 10px;
+    background-color:antiquewhite;
+    color: black; /* Set the text color of the button */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Add rounded corners to the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.header button:hover {
+    background-color:none; /* Change background color on hover */
+
+}
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer h2 {
+    color: goldenrod;
+    margin-top: 20px;
+}
+
+.footer h5 {
+    color: cornsilk;
+    margin-top: 10px;
+}
+
+.footer .footericon {
+    margin-top: 20px;
+}
+
+.footer .foot-icons {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .foot-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-box {
+            margin: 0 auto;
+        }
+        .contact-box h3 {
+            margin-bottom: 20px;
+        }
+        .contact-item {
+            display: flex;
+            background-color: rgba(211, 211, 211, 0.829);
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        .contact-item img {
+            margin-right: 10px;
+        }
+        .contact-item a {
+            text-decoration: none;
+            color: black;
+        }
+        .menue {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* This ensures the images wrap to the next line if they overflow */
+            justify-content: space-around; /* This distributes the images evenly */
+            gap: 10px; /* This adds space between the images */
+        }
+        
+        .container img {
+            max-width: 100%; /* This ensures images don't overflow their container */
+            height: auto; /* Maintains the aspect ratio */
+        }
+        
+        .navbar-titleimg img{
+            width: 50px;
+            height: 50px;
+            padding-top: 5px;
+
+        }
+
+        @media screen and (max-width: 700px) {
+            .navbar-menu-toggle {
+                display: block;
+            }
+            .navbar-links {
+                display: none;
+            }
+            .side-navbar a {
+                padding: 10px;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container img {
+                margin: 10px 0;
+            }
+        }
